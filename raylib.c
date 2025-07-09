@@ -12,7 +12,7 @@ InitWindowCmd(
     int width, height;
 
     if (objc != 4) {
-        Tcl_WrongNumArgs(interp, 1, objv, "a b");
+        Tcl_WrongNumArgs(interp, 1, objv, "width height title");
         return TCL_ERROR;
     }
     
@@ -97,7 +97,7 @@ ClearBackgroundCmd(
     Tcl_Obj **col;
 
     if (objc != 2) {
-        Tcl_WrongNumArgs(interp, 1, objv, "r g b a");
+        Tcl_WrongNumArgs(interp, 1, objv, "color");
         return TCL_ERROR;
     }
 
